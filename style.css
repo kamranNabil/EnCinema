@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-shadow: inset hoff voff blur color;
+  -moz-box-shadow: inset hoff voff blur color;
+  box-shadow: inset hoff voff blur color;
+}
+html{
+  font-size: 64.5%;
+}
+body{
+  background: black;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.sideNavbar{
+ width: 10rem; 
+ height: 100vh;
+ background: black;
+ position: fixed;
+ top: 0;
+ left: 0;
+}
+ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+ul li a{
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul li a svg{
+  fill: white;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.topNav{
+  width: 89.5vw;
+  position: relative;
+  top: 0;
+  left: 10rem;
+  height: 11rem;
+  background: black;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  width: 20rem;
+}
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 25rem;
+  height: 100%;
+}
+.group svg{
+  fill: white;
+  width: 4rem;
+  height: 4rem;
+}
+.user{
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+.homeDiv{
+  position: relative;
+  height: 30vh;
+  width: 89.5vw;
+  position: relative;
+  top: 0;
+  left: 10rem;
+  background: black;
+}
+.left,.right{
+  position: absolute;
+  top: 40%;
+  font-size: 8rem;
+  font-weight: 300;
+  z-index: 100;
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  background: rgba(173, 212, 249, 0.4);
+}
+.left{
+  left: 1rem;
+}
+.right{
+  right: 1rem;
+}
+.Film{
+  background: url("0001-6158673560_20210818_150256_0000.png");
+  background-size: cover;
+  height: 60vh;
+  width: 89.5vw;
+  position: relative;
+  top: 0;
+  left: 10rem;
+}
+.Film h2{
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 30%;
+  left: 6%;
+}
+.Film p{
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 40%;
+  left: 6%;
+}
+.watch{
+  width: 30rem;
+  height: 8rem;
+  background: black;
+  border: 1px solid white;
+  border-radius: 1rem;
+  font-size: 2.7rem;
+  display: grid;
+  place-items: center;
+  color: white;
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  transition: all 0.5s ease-out;
+}
+.watch:hover{
+  background: white;
+  color: black;
+}
+.apiDiv,.apiDiv2,.apiDiv3{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.movieColumn img{
+  transition: all 0.4s ease-in-out;
+}
+.movieColumn img:hover{
+  transform: scale(1.4);
+  z-index: 10;
+}
+.h2{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+  position: relative;
+  height: 5vh;
+  width: 80vw;
+  position: relative;
+  top: 1rem;
+  left: 10rem;
+  font-size: 5rem;
+}
+
+@media (max-width: 770px) {
+  html{
+    font-size: 35.5%;
+  }
+  .search{
+    display: none;
+  }
+  .topNav{
+    height: 9rem;
+    width: 100vw;
+    left: 0;
+  }
+  .logo{
+    width: 14rem;
+  }
+  .user{
+    width: 7rem;
+    height: 7rem;
+  }
+  .sideNavbar{
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 9rem;
+    border-radius: 4rem;
+    z-index: 1000;
+    background: white;
+  }
+  .sideNavbar ul li a svg{
+    fill: black;
+    width: 4rem;
+    height: 4rem;
+  }
+  .sideNavbar ul{
+    flex-direction: row;
+  }
+  .sideNavbar ul li a{
+    display: grid;
+    place-items: center;
+    height: 100%;
+  }
+  .homeDiv,.Film{
+    width: 100vw;
+    left: 0;
+  }
+  .Film{
+    height: 40vh;
+  }
+  .Film h2{
+    top: 20%;
+  }
+  .Film p{
+    font-size: 2rem;
+  }
+  .watch{
+    width: 20rem;
+  }
+  .movieColumn img{
+    width: 30rem;
+  }
+  .logo{
+    margin-left: 2rem;
+  }
+  .none{
+    display: none;
+  }
+  .user{
+    margin-right: -5rem;
+  }
+}
