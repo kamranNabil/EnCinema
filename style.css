@@ -200,7 +200,7 @@ ul li a svg{
   }
   .sideNavbar{
     position: fixed;
-    top: 85%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
