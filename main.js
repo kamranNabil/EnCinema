@@ -57,7 +57,7 @@ right[1].addEventListener('click',()=>{
   apiDiv2.scrollLeft += bigWidth2.width+ 100;
 })
 right[2].addEventListener('click',()=>{
-  let bigWidth3 = apiDiv.getBoundingClientRect();
+  let bigWidth3 = apiDiv3.getBoundingClientRect();
   apiDiv3.scrollLeft += bigWidth3.width+ 100;
 })
 left[0].addEventListener('click',()=>{
@@ -65,10 +65,10 @@ left[0].addEventListener('click',()=>{
   apiDiv.scrollLeft -= bigWidth4.width- 100;
 })
 left[1].addEventListener('click',()=>{
-  let bigWidth5 = apiDiv.getBoundingClientRect();
+  let bigWidth5 = apiDiv2.getBoundingClientRect();
   apiDiv2.scrollLeft -= bigWidth5.width- 100;
 })
 left[2].addEventListener('click',()=>{
-  let bigWidth6 = apiDiv.getBoundingClientRect();
+  let bigWidth6 = apiDiv3.getBoundingClientRect();
   apiDiv3.scrollLeft -= bigWidth6.width- 100;
 })
