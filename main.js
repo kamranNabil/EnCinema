@@ -49,20 +49,26 @@ function showData(data,apiDiv){
 let left = [...document.querySelectorAll('.left')];
 let right = [...document.querySelectorAll('.right')];
 right[0].addEventListener('click',()=>{
-  apiDiv.scrollLeft += apiDiv.getBoundingClientRect() + 200;
+  let bigWidth1 = apiDiv.getBoundingClientRect();
+  apiDiv.scrollLeft += bigWidth1.width+ 200;
 })
 right[1].addEventListener('click',()=>{
-  apiDiv2.scrollLeft += apiDiv2.getBoundingClientRect() + 200;
+  let bigWidth2 = apiDiv2.getBoundingClientRect();
+  apiDiv.scrollLeft += bigWidth2.width+ 200;
 })
 right[2].addEventListener('click',()=>{
-  apiDiv3.scrollLeft += apiDiv3.getBoundingClientRect() + 200;
+  let bigWidth3 = apiDiv.getBoundingClientRect();
+  apiDiv.scrollLeft += bigWidth3.width+ 200;
 })
 left[0].addEventListener('click',()=>{
-  apiDiv.scrollLeft -= apiDiv.getBoundingClientRect() - 200;
+  let bigWidth4 = apiDiv.getBoundingClientRect();
+  apiDiv.scrollLeft -= bigWidth4.width- 200;
 })
 left[1].addEventListener('click',()=>{
-  apiDiv2.scrollLeft -= apiDiv2.getBoundingClientRect() - 200;
+  let bigWidth5 = apiDiv.getBoundingClientRect();
+  apiDiv.scrollLeft -= bigWidth5.width- 200;
 })
 left[2].addEventListener('click',()=>{
-  apiDiv3.scrollLeft -= apiDiv3.getBoundingClientRect() - 200;
+  let bigWidth6 = apiDiv.getBoundingClientRect();
+  apiDiv.scrollLeft -= bigWidth6.width- 200;
 })
