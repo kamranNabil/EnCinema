@@ -46,3 +46,23 @@ function showData(data,apiDiv){
     apiDiv.append(movieL);
   })
 }
+let left = [...document.querySelectorAll('.left')];
+let right = [...document.querySelectorAll('.right')];
+right[0].addEventListener('click',()=>{
+  apiDiv.scrollLeft += 200;
+})
+right[1].addEventListener('click',()=>{
+  apiDiv2.scrollLeft += 200;
+})
+right[2].addEventListener('click',()=>{
+  apiDiv3.scrollLeft += 200;
+})
+left[0].addEventListener('click',()=>{
+  apiDiv.scrollLeft -= 200;
+})
+left[1].addEventListener('click',()=>{
+  apiDiv2.scrollLeft -= 200;
+})
+left[2].addEventListener('click',()=>{
+  apiDiv3.scrollLeft -= 200;
+})
