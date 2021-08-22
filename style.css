@@ -9,7 +9,7 @@
   box-shadow: inset hoff voff blur color;
 }
 html{
-  font-size: 64.5%;
+  font-size: 45.5%;
 }
 body{
   background: black;
@@ -79,7 +79,7 @@ ul li a svg{
 }
 .homeDiv{
   position: relative;
-  height: 30vh;
+  height: 28vh;
   width: 89.5vw;
   position: relative;
   top: 0;
@@ -161,6 +161,7 @@ ul li a svg{
 }
 .movieColumn img{
   transition: all 0.4s ease-in-out;
+  width: 40rem;
 }
 .movieColumn img:hover{
   transform: scale(1.4);
@@ -177,6 +178,11 @@ ul li a svg{
   top: 1rem;
   left: 10rem;
   font-size: 5rem;
+}
+@media (max-width: 1000px) {
+  html{
+    font-size: 64.5%;
+  }
 }
 
 @media (max-width: 770px) {
@@ -200,7 +206,7 @@ ul li a svg{
   }
   .sideNavbar{
     position: fixed;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
