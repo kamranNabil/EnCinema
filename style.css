@@ -9,7 +9,7 @@
   box-shadow: inset hoff voff blur color;
 }
 html{
-  font-size: 45.5%;
+  font-size: 64.5%;
 }
 body{
   background: black;
@@ -19,7 +19,7 @@ body{
   overflow-y: scroll;
 }
 .sideNavbar{
- width: 10rem; 
+ width: 7rem;
  height: 100vh;
  background: black;
  position: fixed;
@@ -42,8 +42,8 @@ ul li a{
 }
 ul li a svg{
   fill: white;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   margin-right: 1rem;
 }
 .topNav{
@@ -51,52 +51,51 @@ ul li a svg{
   position: relative;
   top: 0;
   left: 10rem;
-  height: 11rem;
-  background: black;
+  height: 8rem;
+  background: Black;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 .logo{
-  width: 20rem;
+  width: 10rem;
 }
 .group{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 25rem;
+  width: 15rem;
   height: 100%;
 }
 .group svg{
   fill: white;
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
 }
 .user{
-  height: 8rem;
-  width: 8rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
 }
 .homeDiv{
   position: relative;
-  height: 28vh;
+  height: 40rem;
   width: 89.5vw;
   position: relative;
-  top: 0;
+  top: 5rem;
   left: 10rem;
   background: black;
 }
 .left,.right{
   position: absolute;
   top: 40%;
-  font-size: 8rem;
+  cursor: pointer;
+  font-size: 4rem;
   font-weight: 300;
   z-index: 100;
   color: white;
   width: 5rem;
   height: 5rem;
-  width: 10rem;
-  height: 10rem;
   border-radius: 1rem;
   display: grid;
   place-items: center;
@@ -119,25 +118,25 @@ ul li a svg{
 }
 .Film h2{
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 6%;
 }
 .Film p{
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   position: absolute;
   top: 40%;
   left: 6%;
 }
 .watch{
-  width: 30rem;
-  height: 8rem;
+  width: 15rem;
+  height: 4rem;
   background: black;
   border: 1px solid white;
   border-radius: 1rem;
-  font-size: 2.7rem;
+  font-size: 1.3rem;
   display: grid;
   place-items: center;
   color: white;
@@ -153,18 +152,22 @@ ul li a svg{
 .apiDiv,.apiDiv2,.apiDiv3{
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 37rem;
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth;
 }
+.movieColumn{
+  height: 37rem;
+}
 .movieColumn img{
   transition: all 0.4s ease-in-out;
-  width: 40rem;
+  width: 25rem;
+  height: 37rem;
 }
 .movieColumn img:hover{
-  transform: scale(1.4);
+  transform: scale(1.1);
   z-index: 10;
 }
 .h2{
